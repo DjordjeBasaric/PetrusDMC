@@ -2,6 +2,7 @@ import Link from "next/link";
 import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
 import type { PetrusNavLink } from "@/lib/petrus-content";
 import type { Language } from "@/lib/i18n";
+import { PetrusLogo } from "./PetrusLogo";
 
 interface PetrusHeaderProps {
   lang: Language;
@@ -10,13 +11,13 @@ interface PetrusHeaderProps {
 
 export function PetrusHeader({ lang, navLinks }: PetrusHeaderProps) {
   return (
-    <header className="absolute left-0 right-0 top-0 z-20 flex h-16 items-center justify-between px-4 sm:px-8 lg:px-20">
+    <header className="absolute left-0 right-0 top-0 z-20 flex h-20 items-center justify-between px-4 sm:px-8 lg:h-24 lg:px-20">
       <Link
         href={`/${lang}`}
-        className="font-playfair text-2xl font-bold capitalize tracking-wide text-black sm:text-3xl"
-        aria-label="PETRUS Home"
+        className="inline-flex shrink-0 items-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-burgundy"
+        aria-label="Petrus Travel — Home"
       >
-        PETRUS
+        <PetrusLogo lang={lang} priority className="block" />
       </Link>
 
       <nav

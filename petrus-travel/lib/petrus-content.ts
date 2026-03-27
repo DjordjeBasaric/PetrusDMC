@@ -3,6 +3,8 @@ import { petrusHero as enHero } from "@/content/en/petrus-home";
 import { petrusHero as deHero } from "@/content/de/petrus-home";
 import { petrusNavLinks as enNavLinks } from "@/content/en/petrus-home";
 import { petrusNavLinks as deNavLinks } from "@/content/de/petrus-home";
+import { petrusFooter as enFooter } from "@/content/en/petrus-home";
+import { petrusFooter as deFooter } from "@/content/de/petrus-home";
 import { petrusSections as enSections } from "@/content/en/petrus-home";
 import { petrusSections as deSections } from "@/content/de/petrus-home";
 
@@ -37,6 +39,27 @@ const navLinksMap: Record<Language, readonly PetrusNavLink[]> = {
 
 export function getPetrusNavLinks(lang: Language): readonly PetrusNavLink[] {
   return navLinksMap[lang] ?? navLinksMap.en;
+}
+
+export type PetrusFooterContent = {
+  brandTagline: string;
+  exploreTitle: string;
+  contactTitle: string;
+  contactLead: string;
+  emailLabel: string;
+  contactEmail: string;
+  copyrightSuffix: string;
+  legalLabel: string;
+  logoAlt: string;
+};
+
+const footerMap: Record<Language, PetrusFooterContent> = {
+  en: enFooter,
+  de: deFooter,
+};
+
+export function getPetrusFooterContent(lang: Language): PetrusFooterContent {
+  return footerMap[lang] ?? footerMap.en;
 }
 
 export type PetrusSection = {

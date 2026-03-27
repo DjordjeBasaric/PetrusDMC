@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { headers } from "next/headers";
 import { Poppins, Montserrat, Playfair_Display } from "next/font/google";
 import { getHtmlLangFromHeaders } from "@/lib/i18n";
+import { OrganizationJsonLd } from "@/components/seo/OrganizationJsonLd";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -41,7 +42,10 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} className={`${poppins.variable} ${montserrat.variable} ${playfair.variable}`}>
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased">
+        <OrganizationJsonLd />
+        {children}
+      </body>
     </html>
   );
 }

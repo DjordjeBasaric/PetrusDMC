@@ -1,3 +1,4 @@
+export { PetrusLogo } from "./PetrusLogo";
 export { PetrusHeader } from "./PetrusHeader";
 export { PetrusHero } from "./PetrusHero";
 export { PetrusSocialSidebar } from "./PetrusSocialSidebar";
