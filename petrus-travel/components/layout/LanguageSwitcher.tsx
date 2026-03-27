@@ -7,6 +7,8 @@ import type { Language } from "@/lib/i18n";
 interface LanguageSwitcherProps {
   currentLang: Language;
   variant?: "default" | "light" | "dark";
+  /** Tighter EN · DE for narrow header (e.g. next to hamburger). */
+  compact?: boolean;
 }
 
 function getPathForLang(
@@ -23,6 +25,7 @@ function getPathForLang(
 export function LanguageSwitcher({
   currentLang,
   variant = "default",
+  compact = false,
 }: LanguageSwitcherProps) {
   const pathname = usePathname();
   const pathEn = getPathForLang(pathname, currentLang, "en");
@@ -31,23 +34,44 @@ export function LanguageSwitcher({
   const isLight = variant === "light";
   const isDark = variant === "dark";
   const activeClass = isLight
-    ? "text-sm font-semibold text-white"
+    ? compact
+      ? "text-base font-semibold tracking-[0.12em] text-white"
+      : "text-sm font-semibold text-white"
     : isDark
-      ? "text-sm font-semibold text-black"
-      : "text-sm font-semibold text-burgundy";
+      ? compact
+        ? "text-base font-semibold tracking-[0.12em] text-black"
+        : "text-sm font-semibold text-black"
+      : compact
+        ? "text-base font-semibold tracking-[0.12em] text-burgundy"
+        : "text-sm font-semibold text-burgundy";
   const inactiveClass = isLight
-    ? "text-sm text-white/70 hover:text-white"
+    ? compact
+      ? "text-base tracking-[0.12em] text-white/75 hover:text-white"
+      : "text-sm text-white/70 hover:text-white"
     : isDark
-      ? "text-sm text-black/70 hover:text-black"
-      : "text-sm text-[var(--color-text-muted)] hover:text-burgundy";
+      ? compact
+        ? "text-base tracking-[0.12em] text-black/50 hover:text-black"
+        : "text-sm text-black/70 hover:text-black"
+      : compact
+        ? "text-base tracking-[0.12em] text-black/50 hover:text-burgundy"
+        : "text-sm text-[var(--color-text-muted)] hover:text-burgundy";
   const separatorClass = isLight
-    ? "text-white/50"
+    ? compact
+      ? "text-base text-white/50"
+      : "text-white/45"
     : isDark
-      ? "text-black/50"
-      : "text-[var(--color-text-muted)]/50";
+      ? compact
+        ? "text-base text-black/35"
+        : "text-black/50"
+      : compact
+        ? "text-base text-black/30"
+        : "text-[var(--color-text-muted)]/50";
 
   return (
-    <div className="flex items-center gap-2" aria-label="Language switcher">
+    <div
+      className={compact ? "flex items-center gap-4" : "flex items-center gap-2"}
+      aria-label="Language switcher"
+    >
       <Link
         href={pathEn}
         className={currentLang === "en" ? activeClass : inactiveClass}
@@ -56,7 +80,7 @@ export function LanguageSwitcher({
         EN
       </Link>
       <span className={separatorClass} aria-hidden>
-        |
+        {compact ? "·" : "|"}
       </span>
       <Link
         href={pathDe}

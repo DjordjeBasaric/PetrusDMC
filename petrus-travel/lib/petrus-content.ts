@@ -41,6 +41,32 @@ export function getPetrusNavLinks(lang: Language): readonly PetrusNavLink[] {
   return navLinksMap[lang] ?? navLinksMap.en;
 }
 
+/** Mobile drawer (hamburger) — EN/DE parity. */
+export function getPetrusMobileMenuLabels(lang: Language): {
+  menuTitle: string;
+  closeButton: string;
+  toggleOpenAria: string;
+  toggleCloseAria: string;
+  closeBackdropAria: string;
+} {
+  if (lang === "de") {
+    return {
+      menuTitle: "Menü",
+      closeButton: "Schließen",
+      toggleOpenAria: "Menü öffnen",
+      toggleCloseAria: "Menü schließen",
+      closeBackdropAria: "Menü schließen",
+    };
+  }
+  return {
+    menuTitle: "Menu",
+    closeButton: "Close",
+    toggleOpenAria: "Open menu",
+    toggleCloseAria: "Close menu",
+    closeBackdropAria: "Close menu",
+  };
+}
+
 export type PetrusFooterContent = {
   brandTagline: string;
   exploreTitle: string;

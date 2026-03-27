@@ -13,13 +13,28 @@ interface PetrusLogoProps {
   /** Header / above-the-fold: eager load. */
   priority?: boolean;
   className?: string;
+  /**
+   * `headerMobile`: larger mark below `lg` (phone header); same as default from `lg` up.
+   */
+  size?: "default" | "headerMobile";
 }
 
 /**
  * Brand mark: SVG in `<picture>` (sharp at any DPR), PNG fallback.
  * Alt text comes from locale content for SEO parity.
  */
-export function PetrusLogo({ lang, priority = false, className }: PetrusLogoProps) {
+const imgSizeClass: Record<NonNullable<PetrusLogoProps["size"]>, string> = {
+  default: "h-12 w-auto sm:h-14 lg:h-16 xl:h-20",
+  /** Only used in the `lg:hidden` header row (phones / small tablets). */
+  headerMobile: "h-[4.5rem] w-auto sm:h-[5rem]",
+};
+
+export function PetrusLogo({
+  lang,
+  priority = false,
+  className,
+  size = "default",
+}: PetrusLogoProps) {
   const { logoAlt } = getPetrusFooterContent(lang);
 
   return (
@@ -32,7 +47,7 @@ export function PetrusLogo({ lang, priority = false, className }: PetrusLogoProp
         height={LOGO_HEIGHT}
         decoding="async"
         loading={priority ? "eager" : "lazy"}
-        className="h-12 w-auto transition-[filter] duration-200 ease-out sm:h-14 lg:h-16 xl:h-20 group-hover:[filter:brightness(0)_saturate(100%)_invert(22%)_sepia(54%)_saturate(1200%)_hue-rotate(320deg)_brightness(0.72)_contrast(1.05)]"
+        className={`${imgSizeClass[size]} transition-[filter] duration-200 ease-out group-hover:[filter:brightness(0)_saturate(100%)_invert(22%)_sepia(54%)_saturate(1200%)_hue-rotate(320deg)_brightness(0.72)_contrast(1.05)]`}
       />
     </picture>
   );
