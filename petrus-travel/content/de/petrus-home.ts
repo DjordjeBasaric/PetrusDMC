@@ -37,7 +37,7 @@ export const petrusSections = [
     title: "Montenegro",
     text:
       "Montenegro ist ein kompaktes Adrialand: Küste, Bergland und Seen im Landesinneren liegen in kurzer Fahrzeit voneinander. Diese Geografie hält Transferzeiten überschaubar und erlaubt es, Küstenkultur, geschützte Natur und ländliche Traditionen in einer Route zu verbinden.\n\nDas Reiseziel verbindet mediterranes Erbe mit alpinen Landschaften und einer wachsenden Food- und Weinszene – hilfreich, wenn Kundinnen und Kunden Vielfalt in einem Land suchen, ohne mehrere Länder zu wechseln.\n\nFür Reiseveranstalter und Reisebüros erleichtert dieser Maßstab maßgeschneiderte FIT- und Gruppenangebote, nachvollziehbare Logistik und eine Positionierung über Erlebnisqualität statt Massentourismus.",
-    image: "/home/petrus/ostrog.jpg",
+    image: "/home/petrus/ostrog.webp",
     imageAlt: "Kloster Ostrog, orthodoxes Wallfahrtskloster in der Felswand, Montenegro",
     layout: "left" as const,
   },
@@ -67,7 +67,7 @@ export const petrusSections = [
     title: "Natur & Nationalparks",
     text:
       "Hinter der Küste erwarten Sie in Montenegro beeindruckende Berglandschaften, Seen und Wälder in den Nationalparks. Diese Naturgebiete bieten atemberaubende Ausblicke und einzigartige Möglichkeiten, die bemerkenswerte Biodiversität des Landes zu erleben.",
-    image: "/home/petrus/durmitor_home_nature.jpg",
+    image: "/home/petrus/durmitor_home_nature.webp",
     imageAlt: "Nationalpark Durmitor: Berge, Seen und Wälder",
     layout: "right" as const,
   },

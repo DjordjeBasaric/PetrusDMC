@@ -36,7 +36,7 @@ export const homeContent: PageContent = {
     subtitle: "Kotor",
     description:
       "The Bay of Kotor is a UNESCO World Heritage site. Historic towns, mountain backdrops, and scenic drives make it a core element of many travel programs in Montenegro.",
-    image: "/home/petrus/svetistefan.avif",
+    image: "/home/petrus/svetistefan.webp",
     author: { name: "Petrus Travel", role: "DMC" },
   },
   sections: [

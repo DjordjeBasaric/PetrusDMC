@@ -8,7 +8,7 @@ export const aboutContent: PageContent = {
     title: "Über uns",
     subtitle:
       "Wir sind eine Boutique Destination Management Company mit Sitz in Montenegro—dort, wo die Adria auf steile Gipfel trifft und jedes Programm von Menschen geplant wird, die das Land ganzjährig kennen, nicht nur zur Saison.",
-    backgroundImage: "/home/petrus/durmitor.jpg",
+    backgroundImage: "/home/petrus/durmitor.webp",
   },
   aboutPage: {
     story: {

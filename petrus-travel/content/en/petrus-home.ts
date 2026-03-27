@@ -37,7 +37,7 @@ export const petrusSections = [
     title: "Montenegro",
     text:
       "Montenegro is a compact Adriatic country: the coast, mountain hinterland and interior lakes sit within short driving distance of one another. That geography keeps transfers efficient and makes it straightforward to combine coastal heritage, protected nature and rural culture in one itinerary.\n\nThe destination pairs Mediterranean history with alpine landscapes and a growing food-and-wine scene—useful when clients want variety without crossing multiple countries.\n\nFor travel trade partners, the scale supports tailored FIT and group programs, predictable logistics and positioning built on experience quality rather than mass volume.",
-    image: "/home/petrus/ostrog.jpg",
+    image: "/home/petrus/ostrog.webp",
     imageAlt: "Ostrog Monastery, cliffside Orthodox pilgrimage site in Montenegro",
     layout: "left" as const,
   },
@@ -67,7 +67,7 @@ export const petrusSections = [
     title: "Nature & National Parks",
     text:
       "Beyond the coastline, Montenegro reveals impressive mountain landscapes, lakes and forests across its national parks. These natural areas offer breathtaking scenery and unique opportunities to experience the country’s remarkable biodiversity.",
-    image: "/home/petrus/durmitor_home_nature.jpg",
+    image: "/home/petrus/durmitor_home_nature.webp",
     imageAlt: "Durmitor National Park mountains, lakes and forests",
     layout: "right" as const,
   },

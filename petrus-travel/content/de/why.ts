@@ -27,7 +27,7 @@ export const whyContent: PageContent = {
       text: "Partnerschaft zuerst: ein verantwortliches Team vom ersten Briefing bis zum letzten Transfer.",
     },
     spotlight: {
-      src: "/home/petrus/svetistefan.avif",
+      src: "/home/petrus/svetistefan.webp",
       alt: "Insel Sveti Stefan an der Budva-Riviera, rote Dächer über der Adria",
       caption:
         "Sveti Stefan ist eine befestigte Insel an der Budva-Riviera in Montenegro, über einen schmalen Strand mit dem Festland verbunden. Einst ein Fischerdorf hinter Steinmauern, ist sie heute ein Wahrzeichen—die dicht gedrängten Häuser und roten Ziegeldächer über türkisfarbenem Wasser zählen zu den bekanntesten Küstenmotiven der Adria.",

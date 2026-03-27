@@ -14,7 +14,7 @@ export function PetrusHeader({ lang, navLinks }: PetrusHeaderProps) {
     <header className="absolute left-0 right-0 top-0 z-20 flex h-20 items-center justify-between px-4 sm:px-8 lg:h-24 lg:px-20">
       <Link
         href={`/${lang}`}
-        className="inline-flex shrink-0 items-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-burgundy"
+        className="group inline-flex shrink-0 items-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-burgundy"
         aria-label="Petrus Travel — Home"
       >
         <PetrusLogo lang={lang} priority className="block" />

@@ -36,7 +36,7 @@ export const homeContent: PageContent = {
     subtitle: "Kotor",
     description:
       "Die Bucht von Kotor ist UNESCO-Welterbe. Historische Städte, Bergkulissen und malerische Straßen machen sie zum Kernstück vieler Reiseprogramme in Montenegro.",
-    image: "/home/petrus/svetistefan.avif",
+    image: "/home/petrus/svetistefan.webp",
     author: { name: "Petrus Travel", role: "DMC" },
   },
   sections: [

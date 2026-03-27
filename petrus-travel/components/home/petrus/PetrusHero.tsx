@@ -21,7 +21,7 @@ function HeroTitle({ title }: { title: string }) {
 
 export function PetrusHero({ content }: PetrusHeroProps) {
   const { eyebrow, title, lead, backgroundImage, imageObjectPosition } = content;
-  const src = backgroundImage ?? "/home/petrus/boka2.jpg";
+  const src = backgroundImage ?? "/home/petrus/boka2.webp";
   const objectPosition =
     imageObjectPosition ??
     (backgroundImage ? "object-[50%_45%]" : "object-[50%_20%]");

@@ -32,7 +32,7 @@ export function PetrusLogo({ lang, priority = false, className }: PetrusLogoProp
         height={LOGO_HEIGHT}
         decoding="async"
         loading={priority ? "eager" : "lazy"}
-        className="h-12 w-auto sm:h-14 lg:h-16 xl:h-20"
+        className="h-12 w-auto transition-[filter] duration-200 ease-out sm:h-14 lg:h-16 xl:h-20 group-hover:[filter:brightness(0)_saturate(100%)_invert(22%)_sepia(54%)_saturate(1200%)_hue-rotate(320deg)_brightness(0.72)_contrast(1.05)]"
       />
     </picture>
   );

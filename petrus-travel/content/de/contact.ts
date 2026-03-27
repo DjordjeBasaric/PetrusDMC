@@ -8,7 +8,7 @@ export const contactContent: PageContent = {
     title: "Kontakt",
     subtitle:
       "Partnerschaftsanfragen, Angebote und Fragen zu Montenegro-Programmen. Nutzen Sie die E-Mail unten; eine direkte Telefonnummer für Partner wird in Kürze auf dieser Seite ergänzt.",
-    backgroundImage: "/home/petrus/durmitor_black_lake.jpg",
+    backgroundImage: "/home/petrus/durmitor_black_lake.webp",
   },
   contactPage: {
     sectionTitle: "Geschäftlicher Kontakt",

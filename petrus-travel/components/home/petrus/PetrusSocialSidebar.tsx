@@ -1,5 +1,42 @@
 import Link from "next/link";
-import Image from "next/image";
+import type { CSSProperties } from "react";
+
+const maskIconStyle = (src: string): CSSProperties => ({
+  WebkitMaskImage: `url(${src})`,
+  maskImage: `url(${src})`,
+  WebkitMaskSize: "contain",
+  maskSize: "contain",
+  WebkitMaskRepeat: "no-repeat",
+  maskRepeat: "no-repeat",
+  WebkitMaskPosition: "center",
+  maskPosition: "center",
+});
+
+function SocialIconLink({
+  href,
+  ariaLabel,
+  iconSrc,
+}: {
+  href: string;
+  ariaLabel: string;
+  iconSrc: string;
+}) {
+  return (
+    <Link
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={ariaLabel}
+      className="group focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-burgundy"
+    >
+      <span
+        className="block h-6 w-6 bg-black transition-colors group-hover:bg-burgundy"
+        style={maskIconStyle(iconSrc)}
+        aria-hidden
+      />
+    </Link>
+  );
+}
 
 export function PetrusSocialSidebar() {
   return (
@@ -14,34 +51,16 @@ export function PetrusSocialSidebar() {
         Follow us
       </p>
       <div className="flex flex-col gap-6">
-        <Link
+        <SocialIconLink
           href="https://instagram.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Instagram"
-          className="transition-opacity hover:opacity-80 [&_img]:invert"
-        >
-          <Image
-            src="/home/petrus/instagram.svg"
-            alt=""
-            width={24}
-            height={24}
-          />
-        </Link>
-        <Link
-          href="https://twitter.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Twitter"
-          className="transition-opacity hover:opacity-80 [&_img]:invert"
-        >
-          <Image
-            src="/home/petrus/twitter.svg"
-            alt=""
-            width={24}
-            height={24}
-          />
-        </Link>
+          ariaLabel="Instagram"
+          iconSrc="/home/petrus/instagram.svg"
+        />
+        <SocialIconLink
+          href="https://www.linkedin.com"
+          ariaLabel="LinkedIn"
+          iconSrc="/home/petrus/linkedin.svg"
+        />
       </div>
     </aside>
   );
