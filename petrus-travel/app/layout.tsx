@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { headers } from "next/headers";
 import { Poppins, Montserrat, Playfair_Display } from "next/font/google";
+import { getHtmlLangFromHeaders } from "@/lib/i18n";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -36,7 +37,7 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   const headersList = await headers();
-  const locale = headersList.get("x-locale") ?? "en";
+  const locale = getHtmlLangFromHeaders(headersList);
 
   return (
     <html lang={locale} className={`${poppins.variable} ${montserrat.variable} ${playfair.variable}`}>
