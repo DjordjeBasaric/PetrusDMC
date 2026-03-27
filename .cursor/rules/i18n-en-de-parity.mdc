@@ -1,0 +1,14 @@
+---
+description: EN and DE content must stay in sync; only wording differs by language.
+alwaysApply: true
+---
+
+# English / German content parity
+
+Whenever you add, remove, or change **user-facing content** for English (`en`), apply the **same change** to German (`de`): same keys, same structure, same number of items, same URLs/hrefs—only the **language** (copy) differs.
+
+- If you edit `content/en/**`, update the matching file under `content/de/**` in the same edit (or immediately after).
+- Do not leave one locale with outdated fields, missing sections, or different navigation labels than the other.
+- For shared helpers (e.g. `getPetrusHero`, `petrusNavLinks`), both languages must expose identical shapes so the app can switch locale without layout or missing-string bugs.
+
+When the user asks for copy in one language only, still mirror structure in the other with an appropriate translation unless they explicitly scope the change to a single locale.

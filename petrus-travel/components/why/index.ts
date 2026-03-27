@@ -1,0 +1,1 @@
+export { WhyPageBody } from "./WhyPageBody";

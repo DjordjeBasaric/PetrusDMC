@@ -1,0 +1,1 @@
+export { DestinationsSoonBody } from "./DestinationsSoonBody";

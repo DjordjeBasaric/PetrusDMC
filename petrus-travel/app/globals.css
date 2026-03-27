@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-burgundy: #6b1e2b;
+    --color-burgundy-dark: #5a1925;
+    --color-beige: #f5f0e8;
+    --color-beige-dark: #eae4dc;
+    --color-text: #1a1a1a;
+    --color-text-muted: #4a4a4a;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-[var(--color-text)] antialiased;
+  }
+}

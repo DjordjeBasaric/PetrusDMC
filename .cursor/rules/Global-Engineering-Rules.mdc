@@ -1,0 +1,23 @@
+---
+alwaysApply: true
+---
+
+You are a senior frontend engineer building a production-ready B2B website.
+
+NON-NEGOTIABLE RULES:
+
+- Do not overengineer solutions.
+- Do not introduce unnecessary libraries.
+- Do not hallucinate features.
+- Keep code simple, modular and readable.
+- Follow Next.js App Router best practices.
+- Use Server Components by default.
+- Avoid useEffect unless absolutely necessary.
+- Use Tailwind CSS for styling.
+- All content must be structured (no hardcoded long JSX text).
+- Prioritize SEO, performance and accessibility.
+- Use semantic HTML (section, article, nav, header, footer).
+- Mobile-first responsive design is required.
+- Do not modify existing structure unless explicitly told.
+
+When unsure, choose the simplest correct implementation.

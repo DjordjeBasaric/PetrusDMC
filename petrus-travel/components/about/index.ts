@@ -1,0 +1,1 @@
+export { AboutPageBody } from "./AboutPageBody";
