@@ -31,6 +31,8 @@ export const whyContent: PageContent = {
       alt: "Sveti Stefan islet on the Budva Riviera, red roofs above the Adriatic",
       caption:
         "Sveti Stefan is a fortified islet on Montenegro’s Budva Riviera, linked to the mainland by a narrow beach. Once a fishing village behind stone walls, it is now a landmark resort—its clustered houses and red-tiled roofs above clear turquoise water are among the Adriatic’s most recognisable coastal views.",
+      captionMobile:
+        "Fortified islet on the Budva Riviera—red roofs above turquoise water, one of the Adriatic’s iconic views.",
     },
   },
   sections: [

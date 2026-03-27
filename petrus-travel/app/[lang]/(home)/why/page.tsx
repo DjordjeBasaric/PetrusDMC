@@ -33,9 +33,11 @@ export default function WhyPage({ params }: { params: { lang: string } }) {
 
   const heroContent = {
     eyebrow: homeHero.eyebrow,
+    eyebrowMobile: homeHero.eyebrowMobile,
     title: content.hero?.title ?? "Why Work With Us",
     lead: content.hero?.subtitle ?? "",
     backgroundImage: content.hero?.backgroundImage,
+    titleVariant: "compact" as const,
   };
 
   return (

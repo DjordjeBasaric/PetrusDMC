@@ -156,9 +156,14 @@ export function WhyPageBody({ content }: WhyPageBodyProps) {
               aria-hidden
             />
             {spotlight.caption ? (
-              <p className="absolute bottom-0 left-0 right-0 px-4 pb-6 font-montserrat text-sm font-medium text-white/95 sm:px-10 sm:pb-8 sm:text-base lg:px-16">
-                {spotlight.caption}
-              </p>
+              <>
+                <p className="absolute bottom-0 left-0 right-0 hidden px-4 pb-6 font-montserrat text-sm font-medium text-white/95 sm:block sm:px-10 sm:pb-8 sm:text-base lg:px-16">
+                  {spotlight.caption}
+                </p>
+                <p className="absolute bottom-0 left-0 right-0 max-w-[min(100%,15rem)] px-3 pb-3 font-montserrat text-[10px] font-medium leading-tight text-white/90 sm:hidden">
+                  {spotlight.captionMobile ?? spotlight.caption}
+                </p>
+              </>
             ) : null}
           </div>
         </section>

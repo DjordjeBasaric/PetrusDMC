@@ -37,6 +37,7 @@ export default function DestinationsPage({
 
   const heroContent = {
     eyebrow: homeHero.eyebrow,
+    eyebrowMobile: homeHero.eyebrowMobile,
     title: content.hero?.title ?? "Itineraries",
     lead: content.hero?.subtitle ?? "",
   };

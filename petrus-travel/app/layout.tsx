@@ -25,7 +25,8 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: "Petrus Travel | Montenegro DMC",
-  description: "Montenegro Destination Management Company for travel agencies and tour operators.",
+  description:
+    "Montenegro Destination Management Company for travel agencies and tour operators — Petrus Travel.",
   metadataBase:
     process.env.NEXT_PUBLIC_SITE_URL ?
       new URL(process.env.NEXT_PUBLIC_SITE_URL)

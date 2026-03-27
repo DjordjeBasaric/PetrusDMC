@@ -9,13 +9,18 @@ import { petrusSections as enSections } from "@/content/en/petrus-home";
 import { petrusSections as deSections } from "@/content/de/petrus-home";
 
 export type PetrusHeroContent = {
+  /** Full line (e.g. desktop / tablet). */
   eyebrow: string;
+  /** Short line on narrow screens; falls back to `eyebrow` if omitted. */
+  eyebrowMobile?: string;
   title: string;
   lead: string;
   /** Overrides default hero photo when set (e.g. About page). */
   backgroundImage?: string;
   /** Tailwind classes for `object-position` on the hero image (e.g. `object-[50%_22%]`). */
   imageObjectPosition?: string;
+  /** Slightly smaller main title on narrow screens (e.g. Why page). */
+  titleVariant?: "default" | "compact";
 };
 
 const heroMap: Record<Language, PetrusHeroContent> = {
@@ -93,6 +98,8 @@ export type PetrusSection = {
   tagline: string;
   title: string;
   text: string;
+  /** Optional shorter body copy below `sm` (e.g. partner block). */
+  textMobile?: string;
   image: string;
   imageAlt: string;
   layout: "left" | "right";

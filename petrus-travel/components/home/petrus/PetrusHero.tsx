@@ -20,7 +20,20 @@ function HeroTitle({ title }: { title: string }) {
 }
 
 export function PetrusHero({ content }: PetrusHeroProps) {
-  const { eyebrow, title, lead, backgroundImage, imageObjectPosition } = content;
+  const {
+    eyebrow,
+    eyebrowMobile,
+    title,
+    lead,
+    backgroundImage,
+    imageObjectPosition,
+    titleVariant = "default",
+  } = content;
+  const eyebrowShort = eyebrowMobile ?? eyebrow;
+  const titleClass =
+    titleVariant === "compact"
+      ? "font-playfair text-4xl font-semibold leading-[1.12] text-black sm:text-6xl lg:text-7xl xl:text-8xl xl:leading-[100px]"
+      : "font-playfair text-5xl font-semibold leading-[1.1] text-black sm:text-6xl lg:text-7xl xl:text-8xl xl:leading-[100px]";
   const src = backgroundImage ?? "/home/petrus/boka2.webp";
   const objectPosition =
     imageObjectPosition ??
@@ -62,12 +75,17 @@ export function PetrusHero({ content }: PetrusHeroProps) {
               aria-hidden
             />
             <p className="font-montserrat text-lg font-semibold leading-snug text-black sm:text-xl">
-              <HeroTitle title={eyebrow} />
+              <span className="sm:hidden">
+                <HeroTitle title={eyebrowShort} />
+              </span>
+              <span className="hidden sm:inline">
+                <HeroTitle title={eyebrow} />
+              </span>
             </p>
           </div>
           <h1
             id="hero-heading"
-            className="font-playfair text-5xl font-semibold leading-[1.1] text-black sm:text-6xl lg:text-7xl xl:text-8xl xl:leading-[100px]"
+            className={titleClass}
           >
             <HeroTitle title={title} />
           </h1>

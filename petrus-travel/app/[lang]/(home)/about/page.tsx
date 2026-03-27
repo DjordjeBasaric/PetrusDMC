@@ -33,6 +33,7 @@ export default function AboutPage({ params }: { params: { lang: string } }) {
 
   const heroContent = {
     eyebrow: homeHero.eyebrow,
+    eyebrowMobile: homeHero.eyebrowMobile,
     title: content.hero?.title ?? "About Us",
     lead: content.hero?.subtitle ?? "",
     backgroundImage: content.hero?.backgroundImage,

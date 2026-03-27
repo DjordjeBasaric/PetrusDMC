@@ -156,56 +156,61 @@ export function PetrusHeaderClient({ lang, navLinks }: PetrusHeaderClientProps) 
         </nav>
       </div>
 
-      {/* Mobile drawer */}
-      {open ? (
-        <>
-          <button
-            type="button"
-            className="fixed inset-0 z-40 bg-black/40 lg:hidden"
-            aria-label={m.closeBackdropAria}
-            onClick={() => setOpen(false)}
-          />
-          <div
-            id={menuId}
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby={titleId}
-            className="fixed inset-y-0 right-0 z-50 flex w-[min(100vw,20rem)] flex-col border-l border-black/10 bg-petrus-bg shadow-2xl lg:hidden"
-          >
-            <div className="flex h-20 shrink-0 items-center justify-between border-b border-black/10 px-4">
-              <p
-                id={titleId}
-                className="font-montserrat text-sm font-semibold uppercase tracking-[0.2em] text-burgundy"
-              >
-                {m.menuTitle}
-              </p>
-              <button
-                type="button"
-                className="inline-flex h-12 min-h-[3rem] min-w-[3rem] items-center justify-center rounded-full text-black transition-colors hover:bg-black/[0.06] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-burgundy"
-                aria-label={m.closeButton}
-                onClick={() => setOpen(false)}
-              >
-                <CloseXIcon className="h-7 w-7" />
-              </button>
-            </div>
-            <nav className="flex-1 overflow-y-auto px-4 py-4" aria-label="Main navigation">
-              <ul className="flex flex-col">
-                {navLinks.map(({ href, label }) => (
-                  <li key={href || "home"} className="border-b border-black/10 last:border-b-0">
-                    <Link
-                      href={navHref(lang, href)}
-                      className="block py-4 font-montserrat text-lg font-bold text-black hover:text-petrus-accent"
-                      onClick={() => setOpen(false)}
-                    >
-                      {label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
+      {/* Mobile drawer — always mounted below lg for enter/exit transitions */}
+      <div className="lg:hidden" aria-hidden={!open}>
+        <button
+          type="button"
+          className={`fixed inset-0 z-40 bg-black/40 transition-opacity duration-300 ease-out ${
+            open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
+          }`}
+          aria-label={m.closeBackdropAria}
+          tabIndex={open ? undefined : -1}
+          onClick={() => setOpen(false)}
+        />
+        <div
+          id={menuId}
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby={titleId}
+          className={`fixed inset-y-0 right-0 z-50 flex w-[min(100vw,20rem)] flex-col border-l border-black/10 bg-petrus-bg shadow-2xl transition-transform duration-300 ease-out will-change-transform ${
+            open
+              ? "translate-x-0 pointer-events-auto"
+              : "translate-x-full pointer-events-none"
+          }`}
+        >
+          <div className="flex h-20 shrink-0 items-center justify-between border-b border-black/10 px-4">
+            <p
+              id={titleId}
+              className="font-montserrat text-sm font-semibold uppercase tracking-[0.2em] text-burgundy"
+            >
+              {m.menuTitle}
+            </p>
+            <button
+              type="button"
+              className="inline-flex h-12 min-h-[3rem] min-w-[3rem] items-center justify-center rounded-full text-black transition-colors hover:bg-black/[0.06] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-burgundy"
+              aria-label={m.closeButton}
+              onClick={() => setOpen(false)}
+            >
+              <CloseXIcon className="h-7 w-7" />
+            </button>
           </div>
-        </>
-      ) : null}
+          <nav className="flex-1 overflow-y-auto px-4 py-4" aria-label="Main navigation">
+            <ul className="flex flex-col">
+              {navLinks.map(({ href, label }) => (
+                <li key={href || "home"} className="border-b border-black/10 last:border-b-0">
+                  <Link
+                    href={navHref(lang, href)}
+                    className="block py-4 font-montserrat text-lg font-bold text-black hover:text-petrus-accent"
+                    onClick={() => setOpen(false)}
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
   );
 }

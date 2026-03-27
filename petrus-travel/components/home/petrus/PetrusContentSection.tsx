@@ -5,6 +5,7 @@ interface PetrusContentSectionProps {
   tagline: string;
   title: string;
   text: string;
+  textMobile?: string;
   image: string;
   imageAlt: string;
   layout: "left" | "right";
@@ -15,6 +16,7 @@ export function PetrusContentSection({
   tagline,
   title,
   text,
+  textMobile,
   image,
   imageAlt,
   layout,
@@ -51,9 +53,20 @@ export function PetrusContentSection({
         <h2 className="font-playfair text-4xl font-semibold text-black sm:text-5xl lg:text-6xl">
           {title}
         </h2>
-        <p className="mt-6 whitespace-pre-line font-montserrat text-lg leading-8 text-black">
-          {text}
-        </p>
+        {textMobile ? (
+          <>
+            <p className="mt-6 whitespace-pre-line font-montserrat text-lg leading-8 text-black sm:hidden">
+              {textMobile}
+            </p>
+            <p className="mt-6 hidden whitespace-pre-line font-montserrat text-lg leading-8 text-black sm:block">
+              {text}
+            </p>
+          </>
+        ) : (
+          <p className="mt-6 whitespace-pre-line font-montserrat text-lg leading-8 text-black">
+            {text}
+          </p>
+        )}
       </div>
 
       <div

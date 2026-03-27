@@ -46,7 +46,13 @@ export interface WhyPageExtra {
   /** One line on burgundy—supporting message only. */
   manifesto?: { text: string };
   /** Full-bleed scene between intro and the numbered list. */
-  spotlight?: { src: string; alt: string; caption?: string };
+  spotlight?: {
+    src: string;
+    alt: string;
+    caption?: string;
+    /** Shorter line for narrow screens (e.g. over full-bleed image). */
+    captionMobile?: string;
+  };
 }
 
 /** Inquiry form on the contact page (labels + status copy). */

@@ -31,6 +31,8 @@ export const whyContent: PageContent = {
       alt: "Insel Sveti Stefan an der Budva-Riviera, rote Dächer über der Adria",
       caption:
         "Sveti Stefan ist eine befestigte Insel an der Budva-Riviera in Montenegro, über einen schmalen Strand mit dem Festland verbunden. Einst ein Fischerdorf hinter Steinmauern, ist sie heute ein Wahrzeichen—die dicht gedrängten Häuser und roten Ziegeldächer über türkisfarbenem Wasser zählen zu den bekanntesten Küstenmotiven der Adria.",
+      captionMobile:
+        "Befestigte Insel an der Budva-Riviera—rote Dächer über türkisfarbenem Wasser, eines der ikonischen Küstenmotive der Adria.",
     },
   },
   sections: [

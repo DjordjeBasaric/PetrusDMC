@@ -1,5 +1,6 @@
 export const petrusHero = {
   eyebrow: "Destination Management Company – Montenegro",
+  eyebrowMobile: "DMC - Montenegro",
   title: "Petrus Travel",
   lead:
     "Authentische Montenegro-Erlebnisse, durchdachte Programme und professionelle lokale Unterstützung für internationale Reisepartner.",
@@ -87,6 +88,8 @@ export const petrusSections = [
     title: "Ihr lokaler Partner in Montenegro",
     text:
       "Petrus Travel ist eine Destination Management Company und bietet zuverlässige Unterstützung vor Ort für internationale Reisebüros und Reiseveranstalter.\n\nWir gestalten maßgeschneiderte Programme, koordinieren vertrauenswürdige lokale Partner und sorgen dafür, dass jede Reise in Montenegro professionell organisiert und durchdacht geplant ist.",
+    textMobile:
+      "Petrus Travel ist ein DMC in Montenegro und bietet zuverlässige Unterstützung vor Ort für internationale Reisebüros und Reiseveranstalter.\n\nWir gestalten maßgeschneiderte Programme, koordinieren vertrauenswürdige lokale Partner und sorgen dafür, dass jede Reise in Montenegro professionell organisiert und durchdacht geplant ist.",
     image: "/home/petrus/cetinje.webp",
     imageAlt: "Cetinje, historische Hauptstadt Montenegros",
     layout: "right" as const,

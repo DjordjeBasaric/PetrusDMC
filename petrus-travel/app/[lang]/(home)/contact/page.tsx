@@ -33,6 +33,7 @@ export default function ContactPage({ params }: { params: { lang: string } }) {
 
   const heroContent = {
     eyebrow: homeHero.eyebrow,
+    eyebrowMobile: homeHero.eyebrowMobile,
     title: content.hero?.title ?? "Contact",
     lead: content.hero?.subtitle ?? "",
     backgroundImage: content.hero?.backgroundImage,

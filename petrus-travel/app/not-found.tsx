@@ -57,7 +57,10 @@ export default function NotFound() {
             >
               <PetrusLogo lang="en" className="block" />
             </Link>
-            <p className="mt-2 max-w-md font-montserrat text-sm leading-relaxed text-black/70">
+            <p className="mt-2 max-w-md font-montserrat text-sm leading-relaxed text-black/70 sm:hidden">
+              DMC - Montenegro
+            </p>
+            <p className="mt-2 hidden max-w-md font-montserrat text-sm leading-relaxed text-black/70 sm:block">
               Destination Management Company – Montenegro
             </p>
             <p className="mt-1 max-w-md font-montserrat text-sm leading-relaxed text-black/55">
