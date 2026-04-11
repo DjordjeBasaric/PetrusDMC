@@ -9,7 +9,7 @@ export const petrusHero = {
 export const petrusNavLinks = [
   { href: "" as const, label: "Startseite" },
   { href: "about" as const, label: "Über uns" },
-  { href: "destinations" as const, label: "Reiseverläufe" },
+  { href: "itineraries" as const, label: "Reiseverläufe" },
   { href: "why" as const, label: "Warum mit uns arbeiten" },
   { href: "contact" as const, label: "Kontakt" },
 ] as const;
@@ -48,8 +48,9 @@ export const petrusSections = [
     title: "Adriaküste & historische Städte",
     text:
       "Montenegros Adriaküste verbindet schöne Strände, kristallklares Wasser und charmante Küstenstädte. Von der Bucht von Kotor und historischen Städten wie Kotor und Perast bis zur ikonischen Insel Sveti Stefan bietet die Küste eine beeindruckende Kulisse und eine entspannte mediterrane Atmosphäre.",
-    image: "/home/petrus/budva_oldtown.jpg",
-    imageAlt: "Altstadt von Budva und Adriaküste",
+    image: "/home/petrus/adriatic-coast-cliff.png",
+    imageAlt:
+      "Türkisfarbenes Adriameer unter einem Steinhaus auf einer Felsklippe, eingerahmt von Kiefernzweigen, montenegrinische Küste",
     layout: "right" as const,
   },
   {
@@ -58,8 +59,9 @@ export const petrusSections = [
     title: "Wein & Gastronomie",
     text:
       "Die kulinarische Tradition Montenegros spiegelt die Vielfalt seiner Landschaften wider. Besucherinnen und Besucher genießen authentische regionale Küche, frische Adria-Spezialitäten und lokal produzierte Weine – bei Familienbetrieben und traditionellen Restaurants.",
-    image: "/home/petrus/wine.jpg",
-    imageAlt: "Weinberge, Wein und regionale Gastronomie in Montenegro",
+    image: "/home/petrus/wine-gastronomy-terrace.png",
+    imageAlt:
+      "Wein und Essen im Freien auf einer Steinterrasse bei Sonnenuntergang, gedeckter Tisch mit Gläsern und Platten, Bucht und Berge in der Ferne, Montenegro",
     layout: "left" as const,
   },
   {

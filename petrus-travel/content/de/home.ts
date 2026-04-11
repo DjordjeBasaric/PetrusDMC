@@ -51,16 +51,18 @@ export const homeContent: PageContent = {
     {
       title: "Adriaküste & historische Städte",
       text: "Die Küste vereint unberührte Strände mit dem UNESCO-Welterbe Kotor, Budva und Porto Montenegro.",
-      image: "https://picsum.photos/seed/mne-town/800/600",
-      imageAlt: "Historische Küstenstadt in Montenegro",
+      image: "/home/petrus/adriatic-coast-cliff.png",
+      imageAlt:
+        "Türkisfarbenes Adriameer unter einem Steinhaus auf einer Felsklippe, eingerahmt von Kiefernzweigen, montenegrinische Küste",
       layout: "right",
       author: { name: "Marco Rossi", role: "Traveler" },
     },
     {
       title: "Wein & Gastronomie",
       text: "Montenegros Weinregionen und traditionelle Küche gewinnen immer mehr Anerkennung.",
-      image: "https://picsum.photos/seed/mne-wine/800/600",
-      imageAlt: "Weinregion in Montenegro",
+      image: "/home/petrus/wine-gastronomy-terrace.png",
+      imageAlt:
+        "Wein und Essen im Freien auf einer Steinterrasse bei Sonnenuntergang, gedeckter Tisch mit Gläsern und Platten, Bucht und Berge in der Ferne, Montenegro",
       layout: "left",
       author: { name: "Elena Petrović", role: "Influencer" },
     },

@@ -87,7 +87,7 @@ export function WhyPageBody({ content }: WhyPageBodyProps) {
     <>
       {/* Intro */}
       <section
-        className="border-b border-burgundy/15 bg-[linear-gradient(180deg,rgb(252,250,246)_0%,rgb(245,240,232)_100%)] px-4 py-14 sm:px-8 lg:px-12 lg:py-20"
+        className="border-b border-burgundy/15 bg-[linear-gradient(180deg,rgb(245,240,232)_0%,rgb(250,248,244)_52%,rgb(245,240,232)_100%)] px-4 py-14 sm:px-8 lg:px-12 lg:py-20"
         aria-labelledby="why-section-heading"
       >
         <div className="relative mx-auto max-w-3xl text-center lg:max-w-4xl">

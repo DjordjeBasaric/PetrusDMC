@@ -2,7 +2,7 @@ import { getContent } from "@/lib/content";
 import { getPetrusHero, getPetrusNavLinks } from "@/lib/petrus-content";
 import { isValidLanguage } from "@/lib/i18n";
 import { buildPageMetadata } from "@/lib/metadata";
-import { DestinationsSoonBody } from "@/components/destinations";
+import { ItinerariesPageBody } from "@/components/itineraries";
 import {
   PetrusHeader,
   PetrusHero,
@@ -16,22 +16,22 @@ export function generateMetadata({
   params: { lang: string };
 }) {
   const lang = isValidLanguage(params.lang) ? params.lang : "en";
-  const { pageTitle, pageDescription } = getContent(lang, "destinations");
+  const { pageTitle, pageDescription } = getContent(lang, "itineraries");
   return buildPageMetadata({
     lang,
     title: pageTitle,
     description: pageDescription,
-    path: `/${lang}/destinations`,
+    path: `/${lang}/itineraries`,
   });
 }
 
-export default function DestinationsPage({
+export default function ItinerariesPage({
   params,
 }: {
   params: { lang: string };
 }) {
   const lang = isValidLanguage(params.lang) ? params.lang : "en";
-  const content = getContent(lang, "destinations");
+  const content = getContent(lang, "itineraries");
   const navLinks = getPetrusNavLinks(lang);
   const homeHero = getPetrusHero(lang);
 
@@ -40,6 +40,8 @@ export default function DestinationsPage({
     eyebrowMobile: homeHero.eyebrowMobile,
     title: content.hero?.title ?? "Itineraries",
     lead: content.hero?.subtitle ?? "",
+    backgroundImage: content.hero?.backgroundImage,
+    imageObjectPosition: content.hero?.heroObjectPosition,
   };
 
   return (
@@ -60,14 +62,9 @@ export default function DestinationsPage({
             aria-hidden
           />
 
-          <DestinationsSoonBody
-            badge={content.itinerariesSoon?.badge ?? "Coming soon"}
-            body={
-              content.itinerariesSoon?.body ??
-              content.hero?.subtitle ??
-              ""
-            }
-          />
+          {content.itinerariesPage ? (
+            <ItinerariesPageBody data={content.itinerariesPage} />
+          ) : null}
 
           <PetrusFooter lang={lang} />
         </div>

@@ -33,7 +33,7 @@ export function getPetrusHero(lang: Language): PetrusHeroContent {
 }
 
 export type PetrusNavLink = {
-  href: "" | "about" | "destinations" | "why" | "contact";
+  href: "" | "about" | "itineraries" | "why" | "contact";
   label: string;
 };
 

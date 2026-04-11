@@ -5,7 +5,7 @@ import { LanguageSwitcher } from "./LanguageSwitcher";
 const navLinks = [
   { href: "", label: "Home" },
   { href: "about", label: "About Us" },
-  { href: "destinations", label: "Destinations" },
+  { href: "itineraries", label: "Itineraries" },
   { href: "why", label: "Why Work With Us" },
   { href: "contact", label: "Contact" },
 ] as const;

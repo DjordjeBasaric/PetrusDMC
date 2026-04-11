@@ -51,16 +51,18 @@ export const homeContent: PageContent = {
     {
       title: "Adriatic Coast & Historic Towns",
       text: "The coast combines pristine beaches with UNESCO-listed Kotor, medieval Budva, and the glamour of Porto Montenegro.",
-      image: "https://picsum.photos/seed/mne-town/800/600",
-      imageAlt: "Historic coastal town in Montenegro",
+      image: "/home/petrus/adriatic-coast-cliff.png",
+      imageAlt:
+        "Turquoise Adriatic Sea below a stone house on a rocky cliff, framed by pine branches, Montenegro coast",
       layout: "right",
       author: { name: "Marco Rossi", role: "Traveler" },
     },
     {
       title: "Wine & Gastronomy",
       text: "Montenegro's wine regions and traditional cuisine are gaining recognition. We arrange vineyard visits and culinary tours.",
-      image: "https://picsum.photos/seed/mne-wine/800/600",
-      imageAlt: "Wine region in Montenegro",
+      image: "/home/petrus/wine-gastronomy-terrace.png",
+      imageAlt:
+        "Outdoor wine and dining on a stone terrace at sunset, table set with glasses and platters, bay and mountains in the distance, Montenegro",
       layout: "left",
       author: { name: "Elena Petrović", role: "Influencer" },
     },

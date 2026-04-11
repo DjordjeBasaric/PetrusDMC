@@ -37,6 +37,7 @@ export default function WhyPage({ params }: { params: { lang: string } }) {
     title: content.hero?.title ?? "Why Work With Us",
     lead: content.hero?.subtitle ?? "",
     backgroundImage: content.hero?.backgroundImage,
+    imageObjectPosition: content.hero?.heroObjectPosition,
     titleVariant: "compact" as const,
   };
 
@@ -50,10 +51,10 @@ export default function WhyPage({ params }: { params: { lang: string } }) {
 
         <div className="relative bg-petrus-bg">
           <div
-            className="absolute left-0 right-0 top-0 h-48 -translate-y-full"
+            className="pointer-events-none absolute left-0 right-0 top-0 h-56 -translate-y-full sm:h-64"
             style={{
               background:
-                "linear-gradient(to bottom, transparent, rgb(245, 240, 232))",
+                "linear-gradient(to bottom, rgba(245, 240, 232, 0) 0%, rgba(245, 240, 232, 0.18) 32%, rgba(245, 240, 232, 0.52) 58%, rgba(245, 240, 232, 0.88) 82%, rgb(245, 240, 232) 100%)",
             }}
             aria-hidden
           />

@@ -9,7 +9,7 @@ export const petrusHero = {
 export const petrusNavLinks = [
   { href: "" as const, label: "Home" },
   { href: "about" as const, label: "About Us" },
-  { href: "destinations" as const, label: "Itineraries" },
+  { href: "itineraries" as const, label: "Itineraries" },
   { href: "why" as const, label: "Why Work With Us" },
   { href: "contact" as const, label: "Contact" },
 ] as const;
@@ -48,8 +48,9 @@ export const petrusSections = [
     title: "Adriatic Coast & Historic Towns",
     text:
       "Montenegro’s Adriatic coast combines beautiful beaches, crystal-clear waters and charming coastal towns. From the Bay of Kotor and historic towns like Kotor and Perast to the iconic island of Sveti Stefan, the coastline offers stunning scenery and a relaxed Mediterranean atmosphere.",
-    image: "/home/petrus/budva_oldtown.jpg",
-    imageAlt: "Budva Old Town streets and the Adriatic coast",
+    image: "/home/petrus/adriatic-coast-cliff.png",
+    imageAlt:
+      "Turquoise Adriatic Sea below a stone house on a rocky cliff, framed by pine branches, Montenegro coast",
     layout: "right" as const,
   },
   {
@@ -58,8 +59,9 @@ export const petrusSections = [
     title: "Wine & Gastronomy",
     text:
       "Montenegro’s culinary tradition reflects the richness of its landscapes. Visitors can enjoy authentic regional cuisine, fresh Adriatic seafood and locally produced wines while discovering family-run wineries and traditional restaurants.",
-    image: "/home/petrus/wine.jpg",
-    imageAlt: "Montenegro vineyards, wine and regional dining",
+    image: "/home/petrus/wine-gastronomy-terrace.png",
+    imageAlt:
+      "Outdoor wine and dining on a stone terrace at sunset, table set with glasses and platters, bay and mountains in the distance, Montenegro",
     layout: "left" as const,
   },
   {

@@ -8,7 +8,8 @@ export const whyContent: PageContent = {
     title: "Warum mit uns arbeiten",
     subtitle:
       "Wir sind in Montenegro verwurzelt—mit vertrauensvollen Beziehungen zu Hotels, Guides, Weingütern und Dienstleistern—während unser deutschsprachiges Team die Zusammenarbeit mit Partnern in Deutschland, Österreich und der Schweiz klar, schnell und zuverlässig hält.",
-    backgroundImage: "/home/petrus/viewpoint.jpg",
+    backgroundImage: "/home/petrus/why-our-lady-of-the-rocks.png",
+    heroObjectPosition: "object-[50%_42%]",
   },
   whyPage: {
     timelineIntro: {

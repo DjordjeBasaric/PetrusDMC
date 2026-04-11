@@ -18,7 +18,7 @@ export function LayoutShell({ children, lang }: LayoutShellProps) {
     pathname === `/${lang}/about` ||
     pathname === `/${lang}/why` ||
     pathname === `/${lang}/contact` ||
-    pathname === `/${lang}/destinations`;
+    pathname === `/${lang}/itineraries`;
 
   if (isHome || isPetrusFullBleed) {
     return <>{children}</>;

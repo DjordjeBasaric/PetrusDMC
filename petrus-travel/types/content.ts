@@ -55,6 +55,33 @@ export interface WhyPageExtra {
   };
 }
 
+export interface ItineraryDay {
+  title: string;
+  body: string;
+}
+
+export interface ItineraryProgram {
+  title: string;
+  summary: string;
+  days: ItineraryDay[];
+}
+
+export interface ItinerariesPageExtra {
+  /** Small label above the programme list (e.g. “Sample programmes”). */
+  pageKicker: string;
+  /** Large editorial line in the dark masthead (locale-specific). */
+  mastheadHeadline: string;
+  /** Label above the expandable day list for each programme. */
+  dayByDayLabel: string;
+  programsIntro?: string;
+  programs: ItineraryProgram[];
+  included: {
+    title: string;
+    bullets: string[];
+    closing: string;
+  };
+}
+
 /** Inquiry form on the contact page (labels + status copy). */
 export interface ContactFormContent {
   title: string;
@@ -101,11 +128,8 @@ export interface PageContent {
   whyPage?: WhyPageExtra;
   /** Email + phone block for the Contact page. */
   contactPage?: ContactPageExtra;
-  /** Itineraries (destinations) page — “soon” block copy. */
-  itinerariesSoon?: {
-    badge: string;
-    body: string;
-  };
+  /** Itineraries page — sample programmes + included block. */
+  itinerariesPage?: ItinerariesPageExtra;
   hero?: {
     title: string;
     subtitle: string;
