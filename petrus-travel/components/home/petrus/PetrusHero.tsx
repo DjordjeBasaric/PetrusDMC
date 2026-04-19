@@ -34,7 +34,7 @@ export function PetrusHero({ content }: PetrusHeroProps) {
     titleVariant === "compact"
       ? "font-playfair text-4xl font-semibold leading-[1.12] text-black sm:text-6xl lg:text-7xl xl:text-8xl xl:leading-[100px]"
       : "font-playfair text-5xl font-semibold leading-[1.1] text-black sm:text-6xl lg:text-7xl xl:text-8xl xl:leading-[100px]";
-  const src = backgroundImage ?? "/home/petrus/boka2.webp";
+  const src = backgroundImage ?? "/home/petrus/boka_v2.jpg";
   const objectPosition =
     imageObjectPosition ??
     (backgroundImage ? "object-[50%_45%]" : "object-[50%_20%]");
@@ -65,6 +65,16 @@ export function PetrusHero({ content }: PetrusHeroProps) {
           }}
           aria-hidden
         />
+        {/* Localized beige scrim behind the title block — lifts black text off busy photo areas
+            without darkening the rest of the image. Centered roughly where the H1 sits. */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(ellipse 70% 48% at 50% 46%, rgba(245, 240, 232, 0.55) 0%, rgba(245, 240, 232, 0.34) 32%, rgba(245, 240, 232, 0.16) 55%, rgba(245, 240, 232, 0.04) 72%, rgba(245, 240, 232, 0) 85%)",
+          }}
+          aria-hidden
+        />
       </div>
 
       <div className="relative z-10 flex min-h-screen flex-col justify-center px-4 pt-32 pb-24 sm:px-8 lg:px-20 lg:pt-40">
@@ -74,7 +84,13 @@ export function PetrusHero({ content }: PetrusHeroProps) {
               className="h-[3px] w-[72px] shrink-0 bg-burgundy"
               aria-hidden
             />
-            <p className="font-montserrat text-lg font-semibold leading-snug text-black sm:text-xl">
+            <p
+              className="font-montserrat text-lg font-semibold leading-snug text-black sm:text-xl"
+              style={{
+                textShadow:
+                  "0 1px 1px rgba(245, 240, 232, 0.55), 0 0 10px rgba(245, 240, 232, 0.35)",
+              }}
+            >
               <span className="sm:hidden">
                 <HeroTitle title={eyebrowShort} />
               </span>
@@ -86,10 +102,20 @@ export function PetrusHero({ content }: PetrusHeroProps) {
           <h1
             id="hero-heading"
             className={titleClass}
+            style={{
+              textShadow:
+                "0 1px 2px rgba(245, 240, 232, 0.6), 0 2px 16px rgba(245, 240, 232, 0.4)",
+            }}
           >
             <HeroTitle title={title} />
           </h1>
-          <p className="mt-8 max-w-3xl font-montserrat text-lg leading-relaxed text-black italic sm:text-xl">
+          <p
+            className="mt-8 max-w-3xl font-montserrat text-lg leading-relaxed text-black italic sm:text-xl"
+            style={{
+              textShadow:
+                "0 1px 1px rgba(245, 240, 232, 0.5), 0 0 12px rgba(245, 240, 232, 0.3)",
+            }}
+          >
             {lead}
           </p>
         </div>

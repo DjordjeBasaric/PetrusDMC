@@ -8,7 +8,7 @@ export const itinerariesContent: PageContent = {
     title: "Reiserouten",
     subtitle:
       "Beispielprogramme, die Sie für Ihre Gäste anpassen können—Küste, See und Berge—mit Logistik und Guides vor Ort.",
-    backgroundImage: "/home/petrus/itineraries-perast-hero.png",
+    backgroundImage: "/home/petrus/perast_v2.webp",
     heroObjectPosition: "object-[44%_48%]",
   },
   itinerariesPage: {

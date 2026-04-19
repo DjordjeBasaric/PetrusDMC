@@ -8,7 +8,7 @@ export const itinerariesContent: PageContent = {
     title: "Itineraries",
     subtitle:
       "Sample programmes you can adapt for your clients—coast, lake, and mountains—with logistics and guides handled on the ground.",
-    backgroundImage: "/home/petrus/itineraries-perast-hero.png",
+    backgroundImage: "/home/petrus/perast_v2.webp",
     heroObjectPosition: "object-[44%_48%]",
   },
   itinerariesPage: {

@@ -8,7 +8,7 @@ export const aboutContent: PageContent = {
     title: "About Us",
     subtitle:
       "We are a boutique Destination Management Company rooted in Montenegro—where the Adriatic meets dramatic peaks and every program is shaped by people who live here year-round, not just seasonally.",
-    backgroundImage: "/home/petrus/durmitor.webp",
+    backgroundImage: "/home/petrus/durmitor_v2.webp",
   },
   aboutPage: {
     story: {

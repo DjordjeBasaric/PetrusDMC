@@ -133,7 +133,7 @@ export interface PageContent {
   hero?: {
     title: string;
     subtitle: string;
-    /** Full-bleed background for PetrusHero (e.g. `/home/petrus/durmitor.webp`). */
+    /** Full-bleed background for PetrusHero (e.g. `/home/petrus/durmitor_v2.webp`). */
     backgroundImage?: string;
     /** Tailwind `object-position` classes for the hero image (e.g. `object-[50%_22%]` to show more of the top). */
     heroObjectPosition?: string;

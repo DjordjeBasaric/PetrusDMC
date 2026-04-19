@@ -8,7 +8,7 @@ export const whyContent: PageContent = {
     title: "Why Work With Us",
     subtitle:
       "We are rooted in Montenegro—with trusted relationships across hotels, guides, wineries and suppliers—while our German-speaking team keeps cooperation with partners in Germany, Austria and Switzerland clear, fast, and dependable.",
-    backgroundImage: "/home/petrus/why-our-lady-of-the-rocks.png",
+    backgroundImage: "/home/petrus/perast2_v2.jpg",
     heroObjectPosition: "object-[50%_42%]",
   },
   whyPage: {
