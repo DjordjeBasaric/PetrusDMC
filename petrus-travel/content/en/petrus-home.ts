@@ -17,7 +17,7 @@ export const petrusNavLinks = [
 /** Site-wide footer (all Petrus pages). */
 export const petrusFooter = {
   brandTagline:
-    "Montenegro DMC for travel agencies and tour operators — tailored programs, logistics and local support.",
+    "Montenegro DMC for travel agencies and tour operators, tailored programs, logistics and local support.",
   exploreTitle: "Explore",
   contactTitle: "Contact",
   contactLead:
@@ -28,7 +28,7 @@ export const petrusFooter = {
   legalLabel: "Privacy & terms",
   /** Descriptive alt for logo `<img>` (SEO + accessibility). */
   logoAlt:
-    "Petrus Travel — Montenegro destination management company logo for travel trade partners",
+    "Petrus Travel, Montenegro destination management company logo for travel trade partners",
 } as const;
 
 export const petrusSections = [
@@ -37,7 +37,7 @@ export const petrusSections = [
     tagline: "Discover Montenegro",
     title: "Montenegro",
     text:
-      "Montenegro is a compact Adriatic country: the coast, mountain hinterland and interior lakes sit within short driving distance of one another. That geography keeps transfers efficient and makes it straightforward to combine coastal heritage, protected nature and rural culture in one itinerary.\n\nThe destination pairs Mediterranean history with alpine landscapes and a growing food-and-wine scene—useful when clients want variety without crossing multiple countries.\n\nFor travel trade partners, the scale supports tailored FIT and group programs, predictable logistics and positioning built on experience quality rather than mass volume.",
+      "Montenegro is a compact Adriatic country: the coast, mountain hinterland and interior lakes sit within short driving distance of one another. That geography keeps transfers efficient and makes it straightforward to combine coastal heritage, protected nature and rural culture in one itinerary.\n\nThe destination pairs Mediterranean history with alpine landscapes and a growing food-and-wine scene, useful when clients want variety without crossing multiple countries.\n\nFor travel trade partners, the scale supports tailored FIT and group programs, predictable logistics and positioning built on experience quality rather than mass volume.",
     image: "/home/petrus/ostrog.webp",
     imageAlt: "Ostrog Monastery, cliffside Orthodox pilgrimage site in Montenegro",
     layout: "left" as const,
@@ -79,7 +79,7 @@ export const petrusSections = [
     tagline: "Local traditions",
     title: "Authentic Experiences",
     text:
-      "Montenegro offers experiences that connect visitors with local traditions and everyday life — from small wineries and traditional restaurants to scenic boat rides, local guides and authentic encounters across the country.",
+      "Montenegro offers experiences that connect visitors with local traditions and everyday life, from small wineries and traditional restaurants to scenic boat rides, local guides and authentic encounters across the country.",
     image: "/home/petrus/tradition.webp",
     imageAlt: "Local traditions, hospitality and authentic Montenegrin experiences",
     layout: "left" as const,

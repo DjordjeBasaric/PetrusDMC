@@ -3,7 +3,7 @@ import type { PageContent } from "@/types/content";
 export const contactContent: PageContent = {
   pageTitle: "Contact | Petrus Travel Montenegro DMC",
   pageDescription:
-    "Contact Petrus Travel for partnership inquiries, proposals, and travel programs in Montenegro. Email info@petrustravel.com—we respond on business days.",
+    "Contact Petrus Travel for partnership inquiries, proposals, and travel programs in Montenegro. Email info@petrustravel.com, we respond on business days.",
   hero: {
     title: "Contact",
     subtitle:
@@ -31,7 +31,7 @@ export const contactContent: PageContent = {
       messageLabel: "Message",
       submitLabel: "Send inquiry",
       sendingLabel: "Sending…",
-      successMessage: "Thank you — we received your message and will reply on business days.",
+      successMessage: "Thank you, we received your message and will reply on business days.",
       errorMessage: "Something went wrong. Please try again or email us directly.",
       errorNotConfigured:
         "The contact form is not active yet. Please use the email address above.",

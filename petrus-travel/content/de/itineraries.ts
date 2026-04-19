@@ -3,18 +3,18 @@ import type { PageContent } from "@/types/content";
 export const itinerariesContent: PageContent = {
   pageTitle: "Beispiel-Reiserouten | Montenegro | Petrus Travel DMC",
   pageDescription:
-    "Beispielprogramme für Küste, Land und Nordmontenegro für Reiseveranstalter und Reisebüros—flexible B2B-Routen mit lokaler DMC-Betreuung.",
+    "Beispielprogramme für Küste, Land und Nordmontenegro für Reiseveranstalter und Reisebüros, flexible B2B-Routen mit lokaler DMC-Betreuung.",
   hero: {
     title: "Reiserouten",
     subtitle:
-      "Beispielprogramme, die Sie für Ihre Gäste anpassen können—Küste, See und Berge—mit Logistik und Guides vor Ort.",
+      "Beispielprogramme, die Sie für Ihre Gäste anpassen können, Küste, See und Berge, mit Logistik und Guides vor Ort.",
     backgroundImage: "/home/petrus/perast_v2.webp",
     heroObjectPosition: "object-[44%_48%]",
   },
   itinerariesPage: {
     pageKicker: "Beispielprogramme",
     mastheadHeadline:
-      "Maßgeschneiderte Routen—zuverlässig umgesetzt, jeden Tag.",
+      "Maßgeschneiderte Routen, zuverlässig umgesetzt, jeden Tag.",
     dayByDayLabel: "Tag für Tag",
     programsIntro:
       "Drei Ausgangspunkte für maßgeschneiderte Angebote. Dauer, Tempo und Hotels werden pro Briefing angepasst.",
@@ -22,7 +22,7 @@ export const itinerariesContent: PageContent = {
       {
         title: "7 Tage in der Bucht von Kotor – Signature-Küstenerlebnis",
         summary:
-          "Eine kuratierte Reise durch Montenegros ikonischste Küstenlandschaften—Kultur, Natur und gehobene Erlebnisse im Einklang.",
+          "Eine kuratierte Reise durch Montenegros ikonischste Küstenlandschaften, Kultur, Natur und gehobene Erlebnisse im Einklang.",
         days: [
           {
             title: "Tag 1 – Ankunft & erste Eindrücke",
@@ -57,7 +57,7 @@ export const itinerariesContent: PageContent = {
       {
         title: "9 Tage / 8 Nächte – Das Beste aus Montenegro",
         summary:
-          "Ausgewogenes Programm aus Küste, See und Bergen—ideal für Erstbesucher, die Montenegro ganzheitlich erleben möchten.",
+          "Ausgewogenes Programm aus Küste, See und Bergen, ideal für Erstbesucher, die Montenegro ganzheitlich erleben möchten.",
         days: [
           {
             title: "Tag 1 – Ankunft in Montenegro",
@@ -77,7 +77,7 @@ export const itinerariesContent: PageContent = {
           },
           {
             title: "Tag 5 – Boutique-Erlebnis Skadar-See",
-            body: "Langsamer Tag in der wilden Schönheit des Skadar-Sees—Natur, lokale Gastronomie und authentische Weinkultur",
+            body: "Langsamer Tag in der wilden Schönheit des Skadar-Sees, Natur, lokale Gastronomie und authentische Weinkultur",
           },
           {
             title: "Tag 6 – Rijeka Crnojevića & Weinverkostung",
@@ -85,11 +85,11 @@ export const itinerariesContent: PageContent = {
           },
           {
             title: "Tag 7 – Hinauf in die Berge",
-            body: "Panoramafahrt zum Durmitor—dramatische Landschaften und unberührte Natur treten allmählich zutage",
+            body: "Panoramafahrt zum Durmitor, dramatische Landschaften und unberührte Natur treten allmählich zutage",
           },
           {
             title: "Tag 8 – Nationalpark Durmitor",
-            body: "Gletscherseen, weite Wälder und die Tara-Schlucht—zu den eindrucksvollsten Landschaften Europas",
+            body: "Gletscherseen, weite Wälder und die Tara-Schlucht, zu den eindrucksvollsten Landschaften Europas",
           },
           {
             title: "Tag 9 – Abreise",
@@ -100,7 +100,7 @@ export const itinerariesContent: PageContent = {
       {
         title: "7 Tage Nordmontenegro – Natur, Berge & Genuss",
         summary:
-          "Sanftes Abenteuer durch die nördlichen Landschaften—leichte Aktivität, authentische Küche und Momente des Slow Travel.",
+          "Sanftes Abenteuer durch die nördlichen Landschaften, leichte Aktivität, authentische Küche und Momente des Slow Travel.",
         days: [
           {
             title: "Tag 1 – Ankunft & Bergidylle",

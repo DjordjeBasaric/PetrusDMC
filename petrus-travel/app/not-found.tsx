@@ -53,7 +53,7 @@ export default function NotFound() {
             <Link
               href="/en"
               className="group inline-flex max-w-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-burgundy"
-              aria-label="Petrus Travel — Home"
+              aria-label="Petrus Travel - Home"
             >
               <PetrusLogo lang="en" className="block" />
             </Link>

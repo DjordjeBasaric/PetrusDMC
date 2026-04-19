@@ -106,7 +106,7 @@ export function PetrusHeaderClient({ lang, navLinks }: PetrusHeaderClientProps) 
         <Link
           href={`/${lang}`}
           className="group inline-flex max-w-[min(100%,14rem)] shrink-0 items-center justify-center justify-self-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-burgundy"
-          aria-label="Petrus Travel — Home"
+          aria-label="Petrus Travel - Home"
           onClick={() => setOpen(false)}
         >
           <PetrusLogo lang={lang} priority size="headerMobile" className="block" />
@@ -130,7 +130,7 @@ export function PetrusHeaderClient({ lang, navLinks }: PetrusHeaderClientProps) 
         <Link
           href={`/${lang}`}
           className="group inline-flex min-w-0 shrink-0 items-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-burgundy"
-          aria-label="Petrus Travel — Home"
+          aria-label="Petrus Travel - Home"
         >
           <PetrusLogo lang={lang} priority className="block" />
         </Link>

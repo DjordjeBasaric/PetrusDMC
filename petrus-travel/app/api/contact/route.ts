@@ -65,7 +65,7 @@ export async function POST(request: Request) {
   const from =
     process.env.CONTACT_FROM_EMAIL ?? "Petrus Travel <onboarding@resend.dev>";
 
-  const subject = `[Petrus inquiry] ${name}${company ? ` — ${company}` : ""}`;
+  const subject = `[Petrus inquiry] ${name}${company ? ` - ${company}` : ""}`;
 
   const html = `
 <!DOCTYPE html>

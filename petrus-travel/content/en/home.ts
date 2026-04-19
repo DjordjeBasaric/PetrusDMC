@@ -3,7 +3,7 @@ import type { PageContent } from "@/types/content";
 export const homeContent: PageContent = {
   pageTitle: "Petrus Travel | Montenegro DMC for Travel Agencies",
   pageDescription:
-    "Petrus Travel is a Montenegro Destination Management Company (DMC) for travel agencies and tour operators. Discover Montenegro: Adriatic coast, national parks, wine and gastronomy, and authentic experiences—with reliable on-the-ground support.",
+    "Petrus Travel is a Montenegro Destination Management Company (DMC) for travel agencies and tour operators. Discover Montenegro: Adriatic coast, national parks, wine and gastronomy, and authentic experiences, with reliable on-the-ground support.",
   hero: {
     title: "Montenegro DMC for Travel Agencies and Tour Operators",
     subtitle:
@@ -76,7 +76,7 @@ export const homeContent: PageContent = {
     },
     {
       title: "Authentic Experiences",
-      text: "Beyond the main sights, we connect your clients with local life—family-run guesthouses and guides who share genuine stories.",
+      text: "Beyond the main sights, we connect your clients with local life, family-run guesthouses and guides who share genuine stories.",
       image: "https://picsum.photos/seed/mne-local/800/600",
       imageAlt: "Authentic local experience in Montenegro",
       layout: "left",

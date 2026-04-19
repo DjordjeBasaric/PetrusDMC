@@ -3,11 +3,11 @@ import type { PageContent } from "@/types/content";
 export const itinerariesContent: PageContent = {
   pageTitle: "Sample itineraries | Montenegro | Petrus Travel DMC",
   pageDescription:
-    "Signature coastal, nationwide, and northern Montenegro sample programmes for tour operators and travel agencies—flexible B2B itineraries with local DMC support.",
+    "Signature coastal, nationwide, and northern Montenegro sample programmes for tour operators and travel agencies, flexible B2B itineraries with local DMC support.",
   hero: {
     title: "Itineraries",
     subtitle:
-      "Sample programmes you can adapt for your clients—coast, lake, and mountains—with logistics and guides handled on the ground.",
+      "Sample programmes you can adapt for your clients, coast, lake, and mountains, with logistics and guides handled on the ground.",
     backgroundImage: "/home/petrus/perast_v2.webp",
     heroObjectPosition: "object-[44%_48%]",
   },

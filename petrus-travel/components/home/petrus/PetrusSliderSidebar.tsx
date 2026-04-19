@@ -86,7 +86,7 @@ export function PetrusSliderSidebar() {
 
   return (
     <aside
-      className="fixed right-4 top-1/2 z-50 hidden -translate-y-1/2 flex-col items-end gap-10 lg:flex xl:right-8"
+      className="fixed right-4 top-1/2 z-50 hidden -translate-y-1/2 flex-col items-end gap-10 2xl:right-8 2xl:flex"
       aria-label="Section navigation"
     >
       <div className="flex items-stretch gap-4">

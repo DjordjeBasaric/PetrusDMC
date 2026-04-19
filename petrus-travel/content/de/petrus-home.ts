@@ -17,7 +17,7 @@ export const petrusNavLinks = [
 /** Site-wide footer (all Petrus pages). */
 export const petrusFooter = {
   brandTagline:
-    "Montenegro-DMC für Reisebüros und Veranstalter — Programme, Logistik und lokale Betreuung.",
+    "Montenegro-DMC für Reisebüros und Veranstalter, Programme, Logistik und lokale Betreuung.",
   exploreTitle: "Navigation",
   contactTitle: "Kontakt",
   contactLead:
@@ -28,7 +28,7 @@ export const petrusFooter = {
   legalLabel: "Datenschutz & AGB",
   /** Descriptive alt for logo `<img>` (SEO + accessibility). */
   logoAlt:
-    "Petrus Travel — Logo der Destination Management Company Montenegro für Reisepartner",
+    "Petrus Travel, Logo der Destination Management Company Montenegro für Reisepartner",
 } as const;
 
 export const petrusSections = [

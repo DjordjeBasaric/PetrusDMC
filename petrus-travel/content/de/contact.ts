@@ -3,7 +3,7 @@ import type { PageContent } from "@/types/content";
 export const contactContent: PageContent = {
   pageTitle: "Kontakt | Petrus Travel DMC Montenegro",
   pageDescription:
-    "Kontaktieren Sie Petrus Travel für Partnerschaft, Angebote und Reiseprogramme in Montenegro. E-Mail info@petrustravel.com—Antwort an Werktagen.",
+    "Kontaktieren Sie Petrus Travel für Partnerschaft, Angebote und Reiseprogramme in Montenegro. E-Mail info@petrustravel.com, Antwort an Werktagen.",
   hero: {
     title: "Kontakt",
     subtitle:
@@ -32,7 +32,7 @@ export const contactContent: PageContent = {
       submitLabel: "Anfrage senden",
       sendingLabel: "Wird gesendet…",
       successMessage:
-        "Vielen Dank — wir haben Ihre Nachricht erhalten und antworten an Werktagen.",
+        "Vielen Dank, wir haben Ihre Nachricht erhalten und antworten an Werktagen.",
       errorMessage:
         "Das hat nicht geklappt. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt per E-Mail.",
       errorNotConfigured:
