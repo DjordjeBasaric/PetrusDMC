@@ -31,6 +31,11 @@ export const metadata: Metadata = {
     process.env.NEXT_PUBLIC_SITE_URL ?
       new URL(process.env.NEXT_PUBLIC_SITE_URL)
     : undefined,
+  icons: {
+    icon: [{ url: "/favicon.png", type: "image/png" }],
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 export default async function RootLayout({

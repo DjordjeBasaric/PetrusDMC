@@ -13,6 +13,10 @@ export function OrganizationJsonLd() {
     name: "Petrus Travel",
     url: `${url}/`,
     logo: `${url}/home/petrus/petrus_logo.png`,
+    sameAs: [
+      "https://www.instagram.com/petrus.travel/",
+      "https://www.linkedin.com/company/petrus-travel-dmc",
+    ],
   };
 
   return (

@@ -52,12 +52,12 @@ export function PetrusSocialSidebar() {
       </p>
       <div className="flex flex-col gap-6">
         <SocialIconLink
-          href="https://instagram.com"
+          href="https://www.instagram.com/petrus.travel/"
           ariaLabel="Instagram"
           iconSrc="/home/petrus/instagram.svg"
         />
         <SocialIconLink
-          href="https://www.linkedin.com"
+          href="https://www.linkedin.com/company/petrus-travel-dmc"
           ariaLabel="LinkedIn"
           iconSrc="/home/petrus/linkedin.svg"
         />
